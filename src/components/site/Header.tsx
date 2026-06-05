@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.jpg.asset.json";
@@ -15,6 +15,8 @@ const NAV = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const onDarkHero = location.pathname === "/" && !scrolled && !open;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -38,7 +40,7 @@ export default function Header() {
           </div>
           <span className="hidden sm:flex flex-col leading-none">
             <span className="font-display text-xl font-semibold tracking-tight">La Branco</span>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mt-1">
+            <span className={`text-[10px] uppercase tracking-[0.3em] mt-1 ${onDarkHero ? "text-cream/70" : "text-muted-foreground"}`}>
               Restaurant · Bar · Café
             </span>
           </span>

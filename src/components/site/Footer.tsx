@@ -29,7 +29,7 @@ export default function Footer() {
         <div>
           <p className="eyebrow text-accent mb-4">Visit</p>
           <ul className="space-y-3 text-sm text-secondary-foreground/80">
-            <li className="flex gap-3"><MapPin className="size-4 mt-0.5 shrink-0 text-accent" /> Victoria Island, Lagos, Nigeria</li>
+            <li className="flex gap-3"><MapPin className="size-4 mt-0.5 shrink-0 text-accent" /> Plot 293, Gbagada - Oworonsoki Expressway, Lagos, Nigeria</li>
             <li className="flex gap-3"><Phone className="size-4 mt-0.5 shrink-0 text-accent" /> +234 800 000 0000</li>
             <li className="flex gap-3"><Mail className="size-4 mt-0.5 shrink-0 text-accent" /> hello@labranco.ng</li>
           </ul>
