@@ -41,12 +41,6 @@ function Index() {
         </div>
 
         <div className="container-x relative pb-20 pt-32 text-cream">
-          <motion.p
-            initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-            className="text-xs uppercase tracking-[0.35em] text-mustard mb-6"
-          >
-            Lagos · Est. heritage
-          </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.1 }}
             className="font-display text-5xl sm:text-7xl lg:text-[8rem] leading-[0.95] tracking-tight max-w-5xl text-balance"
@@ -75,7 +69,7 @@ function Index() {
           <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl border-t border-cream/15 pt-8 text-cream/80">
             {[
               { k: "Open", v: "9am – 1am" },
-              { k: "Where", v: "Victoria Island" },
+              { k: "Where", v: "Gbagada" },
               { k: "Cuisine", v: "Naija · Continental" },
               { k: "Rated", v: "★ 4.9 / 600+" },
             ].map((s) => (

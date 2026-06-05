@@ -35,7 +35,7 @@ function Contact() {
       <section className="pb-24">
         <div className="container-x grid lg:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <Info icon={MapPin} label="Address" value="12 Adeola Odeku Street, Victoria Island, Lagos" />
+            <Info icon={MapPin} label="Address" value="Plot 293, Gbagada - Oworonsoki Expressway, Lagos, Nigeria" />
             <Info icon={Phone} label="Phone" value="+234 800 000 0000" />
             <Info icon={Mail} label="Email" value="hello@labranco.ng" />
             <Info icon={Clock} label="Hours" value="Mon–Thu 9am–11pm · Fri–Sat 9am–1am · Sun 10am–11pm" />
