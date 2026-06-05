@@ -44,7 +44,7 @@ function Contact() {
               <div className="aspect-[4/3] w-full overflow-hidden rounded-sm border border-border">
                 <iframe
                   title="La Branco location"
-                  src="https://www.google.com/maps?q=Adeola+Odeku+Street+Victoria+Island+Lagos&output=embed"
+                  src="https://www.google.com/maps?q=Plot+293+Gbagada+Oworonsoki+Expressway+Lagos+Nigeria&output=embed"
                   className="h-full w-full"
                   loading="lazy"
                 />
