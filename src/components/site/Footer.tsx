@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Facebook, Twitter, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
+import { InstagramIcon, FacebookIcon, TwitterIcon } from "./BrandIcons";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
             morning coffee, long lunches, golden-hour cocktails.
           </p>
           <div className="flex gap-3 mt-6">
-            {[Instagram, Facebook, Twitter].map((Icon, i) => (
+            {[InstagramIcon, FacebookIcon, TwitterIcon].map((Icon, i) => (
               <a
                 key={i}
                 href="#"
