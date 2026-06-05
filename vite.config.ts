@@ -3,6 +3,7 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 import netlify from "@netlify/vite-plugin-tanstack-start";
+import react from "@vitejs/plugin-react";
 import fs from "fs";
 import path from "path";
 
@@ -13,7 +14,7 @@ function rootAssetsPlugin() {
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
         const url = req.url || "";
-        const match = url.match(/^\/(logo\.jpg|interior\.png|drink\.png|dish\d\.png)$/);
+        const match = url.match(/^\/(logo\.jpg|interior\.png|drink\.png|dish\d\.png)(\?.*)?$/);
         if (match) {
           const filePath = path.resolve(server.config.root, match[1]);
           if (fs.existsSync(filePath)) {
@@ -60,6 +61,7 @@ export default defineConfig({
         entry: "src/server.ts",
       },
     }),
+    react(),
     netlify(),
     rootAssetsPlugin(),
     tailwindcss(),
